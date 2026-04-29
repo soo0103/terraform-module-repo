@@ -12,12 +12,12 @@ data "aws_ami" "default" {
   most_recent = true
   owners = ["amazon"]
 
-  filter = {
+  filter {
     name = "owner-alias"
     values = ["amazon"]
   }
 
-  filter = {
+  filter {
     name = "name"
     values = ["amzn2-ami-hvm*"]
   }
